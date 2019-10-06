@@ -1,7 +1,8 @@
 import random
 
+
 def hangdman():
-    w_list = ['harry','born','reon','ganp','nausika','joze']
+    w_list = ['harry', 'born', 'reon', 'ganp', 'nausika', 'joze']
     ward = random.choice(w_list)
     wrong = 0
     stages = ['__________',
@@ -30,10 +31,11 @@ def hangdman():
             win = True
             break
         if wrong > 0:
-            print('\n','\n'.join(stages[0:wrong]))
+            print('\n', '\n'.join(stages[0:wrong]))
     if win:
         print('あなたの勝ちです！')
     else:
         print('あなたの負け。\n答えは{}です。'.format(ward))
+
 
 hangdman()
