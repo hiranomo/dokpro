@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 class Scraper:
     """
+
     ニュースをスクレイピングする
 
     Parameters
